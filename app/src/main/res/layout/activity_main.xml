@@ -21,9 +21,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:paddingBottom="16dp"
         android:inputType="text|textPersonName"
-        android:hint="@string/what_is_your_nickname"
+        android:hint="@string/What_is_your_nickname"
         android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/doneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:fontFamily="@font/roboto"
+        android:text="@string/done"
+        android:backgroundTint="@color/colorAccent"
+        app:cornerRadius="0dp" />
+
+    <TextView
+        android:id="@+id/nickNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
 
     <ImageView
         android:id="@+id/starImage"
