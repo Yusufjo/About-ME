@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.run {
             nickNameText.text = binding.nickNameEdit.text
+            invalidateAll()
             nickNameEdit.visibility = View.GONE
             view.visibility = View.GONE
             nickNameText.visibility = View.VISIBLE
